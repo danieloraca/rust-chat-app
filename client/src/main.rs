@@ -4,7 +4,7 @@ use std::sync::mpsc::{self, TryRecvError};
 use std::thread;
 use std::time::Duration;
 
-const ADDRESS: &str = "127.0.0.1:8080"; // The server's address
+const ADDRESS: &str = "127.0.0.1:8089"; // The server's address
 const BUFFER: usize = 32; // Fixed message size to simplify communication
 
 fn main() {

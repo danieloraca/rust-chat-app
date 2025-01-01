@@ -3,7 +3,7 @@ use std::net::TcpListener;
 use std::sync::mpsc;
 use std::thread;
 
-const ADDRESS: &str = "127.0.0.1:8080";
+const ADDRESS: &str = "127.0.0.1:8089";
 const BUFFER: usize = 32; // buffer size for reading messages
 
 // a short delay in the loop
