@@ -25,6 +25,7 @@ fn main() {
             Ok(_) => {
                 // Process and display incoming messages
                 let msg = buff.into_iter().take_while(|&x| x != 0).collect::<Vec<_>>();
+                let msg = String::from_utf8(msg).expect("Invalid utf8 message");
                 println!("Message received: {:?}", msg);
             }
             Err(ref err) if err.kind() == ErrorKind::WouldBlock => (),
